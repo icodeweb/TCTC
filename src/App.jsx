@@ -5,8 +5,7 @@ import Display from './components/Display';
 import { projects } from './data/projects';
 
 function App() {
-  const [selectedProject, setSelectedProject] = useState(null);
-
+  const [selectedProject, setSelectedProject] = useState(projects[0]);
   return (
     <>
       <SidePanel

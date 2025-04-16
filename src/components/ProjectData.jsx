@@ -1,16 +1,16 @@
 import React from 'react'
 
-const ProjectData = (project) => {
+const ProjectData = ({ project }) => {
     return (
         <div id='ProjectData'>
-            <h3>{project.title}</h3>
+            <span>{project.title}</span>
             <div>
                 <span>USAGE : {project.usage}</span>
-                <span>AREA : {project.area}</span>
-                <span>LOCATE : {project.locate}</span>
                 <span>DESIGN : {project.design}</span>
+                <span>AREA : {project.area}</span>
                 <span>BRANDING : {project.branding}</span>
-                <span>CLIENT : {project.client}</span>
+                <span>LOCATE : {project.locate}</span>
+                {project.client && <span>CLIENT : {project.client}</span>}
             </div>
         </div>
     )
