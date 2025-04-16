@@ -7,6 +7,7 @@ const SidePanel = () => {
         <>
             <Header />
             <ProjectList />
+            <p>COPYRIGHT 2020-2024 TCTC ALL RIGHTS RESERVED.</p>
         </>
     );
 };

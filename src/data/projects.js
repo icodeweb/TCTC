@@ -18,7 +18,7 @@ export let projects = [{
         '../assets/images/projects/GYEOP/6.jpg',
         '../assets/images/projects/GYEOP/7.jpg',
         '../assets/images/projects/GYEOP/8.jpg'],
-    thumbnail: '../assets/images/thumbnails/1.png'
+    thumbnail: 'assets/images/thumbnails/1.png'
 }, {
     year: 2020,
     id: 2,
@@ -75,5 +75,5 @@ export let projects = [{
         'assets/images/projects/VETIVER/6.jpg',
         'assets/images/projects/VETIVER/7.jpg',
         'assets/images/projects/VETIVER/8.jpg'],
-    thumbnail: 'assets/images/thumbnails/3.png'
+    thumbnail: 'assets/images/thumbnails/10.png'
 }]
