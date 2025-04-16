@@ -1,6 +1,6 @@
 import React from 'react'
 
-const YearProjects = ({ year, projects, setHoveredThumbnail }) => {
+const YearProjects = ({ year, projects, setHoveredThumbnail, setSelectedProject }) => {
     return (
         <div className="year-section" id={year}>
             <span>{year}</span>
@@ -8,10 +8,11 @@ const YearProjects = ({ year, projects, setHoveredThumbnail }) => {
                 {projects.map((project) => (
                     <li
                         key={project.id}
+                        onClick={() => setSelectedProject(project)}
                         onMouseEnter={() => setHoveredThumbnail(project.thumbnail)}
                         onMouseLeave={() => setHoveredThumbnail(null)}
                     >
-                        <span>{project.id}.{project.title}</span>
+                        <span>{String(project.id).padStart(3, '0')}.{project.title}</span>
                         <span>{project.category}</span>
                     </li>
                 ))}
@@ -19,5 +20,4 @@ const YearProjects = ({ year, projects, setHoveredThumbnail }) => {
         </div>
     )
 }
-
 export default YearProjects
